@@ -34,7 +34,7 @@ export default function Home() {
             <VStack bgColor={"black"}>
                 <Box height={"100vh"}>
                     <Center pt={"20vh"}>
-                        <Text color={"white"} fontSize={"4xl"}>
+                        <Text color={"white"} fontSize={"6xl"}>
                             Hello I'm{" "}
                             <Text as="span" color={"blue"}>
                                 William{" "}
@@ -43,7 +43,7 @@ export default function Home() {
                         </Text>
                     </Center>
                     <Center mt={10}>
-                        <Text color={"white"} fontSize={"2xl"}>
+                        <Text color={"white"} fontSize={"4xl"}>
                             Skills
                         </Text>
                     </Center>
@@ -74,7 +74,11 @@ export default function Home() {
                     </Center>
                 </Box>
                 <Box height={"100%"} ref={scrollToWork}>
-
+                    <Center pt={"20vh"}>
+                        <Text color={"white"} fontSize={"6xl"}>
+                            Projects
+                        </Text>
+                    </Center>
                     <Grid templateColumns='repeat(2,1fr)' templateRows='repeat(2, 1fr)' gap={20} mb={20} mx={20}
                           pt={20}>
                         <GridItem colSpan={1}>
@@ -128,7 +132,11 @@ export default function Home() {
                 </Box>
                 <Box height={'100vh'}/>
                 <Box height={"100vh"} ref={scrollToSocials}>
-
+                    <Center pt={"20vh"}>
+                        <Text color={"white"} fontSize={"6xl"}>
+                            Socials
+                        </Text>
+                    </Center>
                     <Center>
                         <Grid templateColumns="repeat(2, 1fr)" gap={6} m={6}>
                             <Link href={"https://www.linkedin.com/in/william-soksoda/"}>
