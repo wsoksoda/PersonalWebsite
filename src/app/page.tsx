@@ -1,12 +1,12 @@
 "use client";
 
 import {
-    ChakraProvider,
     Center,
     Text,
     Box,
     Button,
-    Grid, GridItem, VStack
+    Grid, GridItem, VStack,
+    Card
 } from "@chakra-ui/react";
 
 import {ArrowDownIcon} from "@chakra-ui/icons";
@@ -30,7 +30,6 @@ export default function Home() {
     }
 
     return (
-        <ChakraProvider>
             <VStack bgColor={"black"}>
                 <Box height={"100vh"}>
                     <Center pt={"20vh"}>
@@ -68,7 +67,7 @@ export default function Home() {
                     </Center>
 
                     <Center>
-                        <Button onClick={handleScrollToWork}>
+                        <Button colorPalette='gray' variant='surface' onClick={handleScrollToWork}>
                             View my Projects <ArrowDownIcon ml={"1"}/>
                         </Button>
                     </Center>
@@ -79,20 +78,23 @@ export default function Home() {
                             Projects
                         </Text>
                     </Center>
-                    <Grid templateColumns='repeat(2,1fr)' templateRows='repeat(2, 1fr)' gap={20} mb={20} mx={20}
+                    <Card.Root my={10} mx={20} variant='subtle'>
+                    <Grid templateColumns='repeat(2,1fr)' gap={20} mb={20} mx={20}
                           pt={20}>
                         <GridItem colSpan={1}>
-                            <Text fontSize='4xl' color='white' mb={10}>
+                            <Card.Title fontSize='4xl' mb={10} textDecoration='underline'>
                                 Lego Website
-                            </Text>
+                            </Card.Title>
+
                             <Link href={"https://github.com/wsoksoda/Lego"}>
-                                <Button>
+                                <Button colorPalette='blue'>
                                     Repository
                                 </Button>
                             </Link>
                         </GridItem>
+                        <Card.Body>
                         <GridItem colSpan={1}>
-                            <Text color='white'>
+                            <Card.Description fontSize='md'>
                                 A Full Stack project complete with a Spring Boot, Kotlin Backend and a NextJS frontend.
                                 This project takes a csv of every existing lego set produced and allows you to navigate
                                 through a
@@ -102,30 +104,37 @@ export default function Home() {
                                 search
                                 for your favorite
                                 set.
-                            </Text>
+                            </Card.Description>
                         </GridItem>
+                    </Card.Body>
+                        </Grid>
+                    </Card.Root>
+                    <Card.Root my={10} mx={20} variant='subtle'>
+                    <Grid templateColumns='repeat(2,1fr)' gap={20} mb={20} mx={20}
+                          pt={20}>
                         <GridItem colSpan={1}>
-                            <Text color='white'>
+                            <Card.Description fontSize='md'>
                                 A Full Stack project complete with a Spring Boot, Kotlin Backend and a NextJS frontend.
                                 This project allows you to create, edit, and view workouts. Personalize your plan to
                                 what
                                 you
                                 see fit and ignore the need to remember or create workouts at the gym.
-                            </Text>
+                            </Card.Description>
                         </GridItem>
                         <GridItem colSpan={1}>
-                            <Text fontSize='4xl' color='white' mb={10}>
+                            <Card.Title fontSize='4xl' mb={10} textDecoration='underline'>
                                 Workout Website
-                            </Text>
+                            </Card.Title>
                             <Link href={"https://github.com/wsoksoda/Workout"}>
-                                <Button>
+                                <Button colorPalette='blue'>
                                     Repository
                                 </Button>
                             </Link>
                         </GridItem>
                     </Grid>
+                    </Card.Root>
                     <Center pt={6}>
-                        <Button onClick={handleScrollToSocials}>
+                        <Button colorPalette='gray' variant='surface' onClick={handleScrollToSocials}>
                             Socials <ArrowDownIcon ml={"1"}/>
                         </Button>
                     </Center>
@@ -154,14 +163,14 @@ export default function Home() {
                     </Center>
                     <Center m={6}>
                         <Link href={"/resume"}>
-                            <Button>
+                            <Button colorPalette='gray' variant='surface'>
                                 View My Resume
                             </Button>
                         </Link>
                     </Center>
                     <Center m={6}>
                         <Link href={"https://github.com/wsoksoda/PersonalWebsite"}>
-                            <Button>
+                            <Button colorPalette='gray' variant='surface' >
                                 Check out the source code for this project
                             </Button>
                         </Link>
@@ -169,7 +178,5 @@ export default function Home() {
 
                 </Box>
             </VStack>
-
-        </ChakraProvider>
     );
 }
