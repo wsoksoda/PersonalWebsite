@@ -86,7 +86,7 @@ export default function Home() {
                                 Lego Website
                             </Card.Title>
 
-                            <Link href={"https://github.com/wsoksoda/Lego"}>
+                            <Link href={"https://github.com/wsoksoda/Lego"} target="_blank">
                                 <Button colorPalette='blue'>
                                     Repository
                                 </Button>
@@ -125,7 +125,7 @@ export default function Home() {
                             <Card.Title fontSize='4xl' mb={10} textDecoration='underline'>
                                 Workout Website
                             </Card.Title>
-                            <Link href={"https://github.com/wsoksoda/Workout"}>
+                            <Link href={"https://github.com/wsoksoda/Workout"} target="_blank">
                                 <Button colorPalette='blue'>
                                     Repository
                                 </Button>
@@ -148,7 +148,7 @@ export default function Home() {
                     </Center>
                     <Center>
                         <Grid templateColumns="repeat(2, 1fr)" gap={6} m={6}>
-                            <Link href={"https://www.linkedin.com/in/william-soksoda/"}>
+                            <Link href={"https://www.linkedin.com/in/william-soksoda/"} target="_blank">
                                 <Image
                                     src="/linkedIn.png"
                                     alt="LinkedIn"
@@ -156,7 +156,7 @@ export default function Home() {
                                     height={100}
                                 />
                             </Link>
-                            <Link href={"https://github.com/wsoksoda"}>
+                            <Link href={"https://github.com/wsoksoda"} target="_blank">
                                 <Image src="/github.png" alt="Github" width={100} height={100}/>
                             </Link>
                         </Grid>
@@ -169,7 +169,7 @@ export default function Home() {
                         </Link>
                     </Center>
                     <Center m={6}>
-                        <Link href={"https://github.com/wsoksoda/PersonalWebsite"}>
+                        <Link href={"https://github.com/wsoksoda/PersonalWebsite"} target="_blank">
                             <Button colorPalette='gray' variant='surface' >
                                 Check out the source code for this project
                             </Button>
