@@ -27,14 +27,14 @@ export default function Socials() {
             </Center>
             <Center m={6}>
                 <Link href={"/resume"}>
-                    <Button colorPalette='gray' variant='surface'>
+                    <Button colorPalette='purple'>
                         View My Resume
                     </Button>
                 </Link>
             </Center>
             <Center m={6}>
                 <Link href={"https://github.com/wsoksoda/PersonalWebsite"} target="_blank">
-                    <Button colorPalette='gray' variant='surface'>
+                    <Button colorPalette='purple'>
                         Check out the source code for this project
                     </Button>
                 </Link>

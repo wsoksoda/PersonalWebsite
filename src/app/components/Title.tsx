@@ -9,7 +9,7 @@ export default function Title() {
         <Center pt={"20vh"}>
             <Text color={"white"} fontSize={"6xl"}>
                 Hello I'm{" "}
-                <Text as="span" color={"blue"}>
+                <Text as="span" color={"purple.600"}>
                     William{" "}
                 </Text>
                 Backend Web Developer
