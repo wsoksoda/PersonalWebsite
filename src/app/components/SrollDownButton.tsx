@@ -14,7 +14,7 @@ export default function ScrollDownButton(props: props) {
     let handleScroll = props.handleScroll
     return (
         <Center pt={6}>
-            <Button colorPalette='gray' variant='surface' onClick={handleScroll}>
+            <Button colorPalette='purple' onClick={handleScroll}>
                 {buttonText} <ArrowDownIcon ml={"1"}/>
             </Button>
         </Center>

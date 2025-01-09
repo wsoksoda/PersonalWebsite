@@ -18,7 +18,7 @@ export default function Projects() {
                         </Card.Title>
 
                         <Link href={"https://github.com/wsoksoda/Lego"} target="_blank">
-                            <Button colorPalette='blue'>
+                            <Button colorPalette='purple'>
                                 Repository
                             </Button>
                         </Link>
@@ -57,7 +57,7 @@ export default function Projects() {
                             Workout Website
                         </Card.Title>
                         <Link href={"https://github.com/wsoksoda/Workout"} target="_blank">
-                            <Button colorPalette='blue'>
+                            <Button colorPalette='purple'>
                                 Repository
                             </Button>
                         </Link>

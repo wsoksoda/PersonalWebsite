@@ -9,7 +9,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/b
 const Resume: React.FC = () => (
         <Box bgColor={"black"} height={"100vh"}>
             <Link href={"./"}>
-            <Button>
+            <Button colorPalette={"purple"}>
                 Return
             </Button>
             </Link>
