@@ -1,7 +1,7 @@
 import {
-    Button,
     Center,
 } from "@chakra-ui/react";
+import {Button} from "@/components/ui/button";
 import {ArrowDownIcon} from "@chakra-ui/icons";
 
 interface props {

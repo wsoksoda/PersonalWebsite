@@ -1,7 +1,8 @@
 'use client'
 import React from 'react';
 import {Document, Page, pdfjs} from 'react-pdf';
-import {Box, Button, Center} from "@chakra-ui/react";
+import {Box, Center} from "@chakra-ui/react";
+import {Button} from "@/components/ui/button";
 import Link from "next/link";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
