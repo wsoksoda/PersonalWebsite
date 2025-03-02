@@ -1,4 +1,5 @@
-import {Button, Center, Grid, Text} from "@chakra-ui/react";
+import {Center, Grid, Text} from "@chakra-ui/react";
+import {Button} from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 

@@ -1,5 +1,6 @@
-import {Button, Card, Center, Grid, GridItem, Text} from "@chakra-ui/react";
+import {Card, Center, Grid, GridItem, Text} from "@chakra-ui/react";
 import Link from "next/link";
+import {Button} from "@/components/ui/button";
 
 export default function Projects() {
     return (
