@@ -1,3 +1,4 @@
+import React from 'react';
 import {Card, Center, Grid, GridItem, Text} from "@chakra-ui/react";
 import Link from "next/link";
 import {Button} from "@/components/ui/button";
@@ -11,8 +12,7 @@ export default function Projects() {
                 </Text>
             </Center>
             <Card.Root my={10} mx={20} variant='subtle'>
-                <Grid templateColumns='repeat(2,1fr)' gap={20} mb={20} mx={20}
-                      pt={20}>
+                <Grid templateColumns='repeat(2,1fr)' gap={20} mb={20} mx={20} pt={20}>
                     <GridItem colSpan={1}>
                         <Card.Title fontSize='4xl' mb={10} textDecoration='underline'>
                             Lego Website
@@ -45,15 +45,6 @@ export default function Projects() {
                 <Grid templateColumns='repeat(2,1fr)' gap={20} mb={20} mx={20}
                       pt={20}>
                     <GridItem colSpan={1}>
-                        <Card.Description fontSize='md'>
-                            A Full Stack project complete with a Spring Boot, Kotlin Backend and a NextJS frontend.
-                            This project allows you to create, edit, and view workouts. Personalize your plan to
-                            what
-                            you
-                            see fit and ignore the need to remember or create workouts at the gym.
-                        </Card.Description>
-                    </GridItem>
-                    <GridItem colSpan={1}>
                         <Card.Title fontSize='4xl' mb={10} textDecoration='underline'>
                             Workout Website
                         </Card.Title>
@@ -62,6 +53,15 @@ export default function Projects() {
                                 Repository
                             </Button>
                         </Link>
+                    </GridItem>
+                    <GridItem colSpan={1}>
+                        <Card.Description fontSize='md'>
+                            A Full Stack project complete with a Spring Boot, Kotlin Backend and a NextJS frontend.
+                            This project allows you to create, edit, and view workouts. Personalize your plan to
+                            what
+                            you
+                            see fit and ignore the need to remember or create workouts at the gym.
+                        </Card.Description>
                     </GridItem>
                 </Grid>
             </Card.Root>
