@@ -1,17 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
-import { Document, Page, pdfjs } from "react-pdf";
 import { motion } from "motion/react";
 import { HiArrowLeft } from "react-icons/hi";
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 const RESUME_FILE = "/William_Soksoda_Resume.pdf";
 
 export default function Resume() {
-  const [numPages, setNumPages] = useState<number>(0);
 
   return (
     <main className="min-h-screen bg-ink-950 px-6 py-8">
@@ -40,26 +37,10 @@ export default function Resume() {
           transition={{ duration: 0.5 }}
           className="mt-8 flex flex-col items-center gap-6"
         >
-          <Document
-            file={RESUME_FILE}
-            onLoadSuccess={({ numPages }) => setNumPages(numPages)}
-            loading={<p className="py-20 text-slate-400">Loading résumé…</p>}
-            error={<p className="py-20 text-red-400">Failed to load résumé.</p>}
-          >
-            {Array.from({ length: numPages }, (_, index) => (
-              <div
-                key={`page_${index + 1}`}
-                className="mb-6 overflow-hidden rounded-xl shadow-card ring-1 ring-white/10"
-              >
-                <Page
-                  pageNumber={index + 1}
-                  renderTextLayer={false}
-                  renderAnnotationLayer={false}
-                  width={800}
-                />
-              </div>
-            ))}
-          </Document>
+          <iframe
+              src="/William_Soksoda_Resume.pdf"
+              className="h-[1000px] w-full rounded-xl"
+          />
         </motion.div>
       </div>
     </main>
